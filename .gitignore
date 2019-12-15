@@ -1,0 +1,12 @@
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.out
+*.synctex.gz
+*.spl
+*.tex.bak
+*.vtc
+*.bib~*
+*.toc
