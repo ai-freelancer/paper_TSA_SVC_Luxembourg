@@ -1,5 +1,72 @@
 \section{Results \& discussion}
 \label{sec:resul}
 
------------- Do something here ----------------------
+We have not mentioned the polynomial function due to the factor that is always performing worst in our tests.
+In the following table you can see the result for linear and Radial Basis function kernel type and different values of C.
 
+\begin{table}[!ht]
+	\begin{center}
+	\begin{tabular}{ccc}
+		\hline
+		Kernel Type  & C & Accuracy  \\ 
+		\hline
+		\multirow{4}{*}{Radial Basis function}       & 0.5     & 75$\%$ \\
+				 & 1        & 78 $\%$         \\
+				 & 3        & 84  $\%$       \\
+				 & 5        & 83 $\%$    	    \\
+		\hline
+		\multirow{4}{*}{Linear}       & 0.5     & 78$\%$ \\
+				 & 1        & 80 $\%$         \\
+				 & 3        & 82  $\%$       \\
+				 & 5        & 77 $\%$    	    \\ \hline
+	\end{tabular}
+	\end{center}
+	\caption{Summary of accuracy with different kernel and different C.}
+	\label{tb:table2}
+\end{table}	
+
+Another important parameter to tune was the minimum word frequency. The following table contains evaluation of different word frequencies.
+
+
+\begin{table}[!ht]
+	\begin{center}
+	\begin{tabular}{cc}
+		\hline
+		Word Freequency & Accuracy  \\ 
+		\hline
+		3      & 75$\%$ \\
+				5  & 79 $\%$         \\
+				   7 & 77  $\%$       \\
+				 10    & 76 $\%$    	    \\
+		\hline
+	\end{tabular}
+	\end{center}
+	\caption{Summary of accuracy with different kernel and different C.}
+	\label{tb:table3}
+\end{table}	
+
+
+
+Based on this knowledge we chose the following hyper-parameters:
+
+
+\begin{table}[!h]
+	\begin{center}
+	\begin{tabular}{c | c}
+		\hline
+		Word Freequency & 5 \\ \hline 
+		
+		
+		Kernel Type & Radial Basis \\  \hline 
+		
+		C & 3 \\  \hline 
+		
+		Training Accuracy & 95$\%$ \\  \hline 
+		
+		Test Accuracy & 85$\%$ \\ 
+		\hline
+	\end{tabular}
+	\end{center}
+	\caption{Summary of accuracy with different kernel and different C.}
+	\label{tb:table4}
+\end{table}	
